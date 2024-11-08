@@ -1,0 +1,22 @@
+<!--user component list -->
+<app-users [profile]="teachersProfile?.teachersDetail"></app-users>
+<div class="all-students" [routerLink]="['/allStudents']">all StudentsS</div>
+
+<div>
+  <div class="subject-blocks-container">
+    <button class="subjects-blocks" [routerLink]="['/subject', 'physics']">
+      physics
+    </button>
+    <button class="subjects-blocks" [routerLink]="['/subject', 'chemistry']">
+      chemistry
+    </button>
+  </div>
+  <div class="subject-blocks-container">
+    <button class="subjects-blocks" [routerLink]="['/subject', 'maths']">
+      maths
+    </button>
+    <button class="subjects-blocks" [routerLink]="['/subject', 'computers']">
+      computers
+    </button>
+  </div>
+</div>
